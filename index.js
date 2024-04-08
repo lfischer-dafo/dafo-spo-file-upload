@@ -33,7 +33,7 @@ try {
 
 } catch (error) {
 
-  console.error(error)
+  console.log(JSON.stringify(error))
   core.setFailed(error)
 
 }
