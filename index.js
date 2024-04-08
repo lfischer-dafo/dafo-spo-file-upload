@@ -28,12 +28,12 @@ try {
   // Upload to SPO
   spsave(coreOptions, credentials, fileOptions)
   .catch(err => {
-    throw new Error(err)
+    throw new Error(JSON.stringify(err))
   })
 
 } catch (error) {
 
-  console.log(JSON.stringify(error))
+  console.error(error)
   core.setFailed(error)
 
 }
